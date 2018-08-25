@@ -57,10 +57,10 @@ function laugh(){
 	happiness += 0.05;
 	$('.happ').html(happiness);
 }
-function work(){
+/*function work(){
 	addTurn();
     $('.res').prepend("Your mother rubs your cheek as you giggle. </br>"); //TODO: change thought
-}
+}*/
 
 function cry(){
     happiness -= 0.05;
