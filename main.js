@@ -54,7 +54,7 @@ function sleep(){
 }
 
 function laugh(){
-	happiness += 0.05;
+	happiness = Math.min(happiness += 0.05, 100);
 	$('.happ').html(happiness);
 }
 /*function work(){
@@ -63,7 +63,7 @@ function laugh(){
 }*/
 
 function cry(){
-    happiness -= 0.05;
+    happiness = Math.max(happiness -= 0.05, 0);
     $('.happ').html(happiness);
     $('.res').prepend("You begin to wail. Daddy lifts you into his arms.</br>");
 }
