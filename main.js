@@ -49,12 +49,14 @@ function blink(){
 
 function sleep(){
 	tiredness = Math.max(tiredness -= 0.05, 0);
+    tiredness = tiredness.toFixed(2);
 	$('.tiredness').html(tiredness);
     $('.res').prepend("You slowly close your eyes and sleep. </br>");
 }
 
 function laugh(){
 	happiness = Math.min(happiness += 0.05, 100);
+    happiness = happiness.toFixed(2);
 	$('.happ').html(happiness);
 }
 /*function work(){
@@ -64,12 +66,14 @@ function laugh(){
 
 function cry(){
     happiness = Math.max(happiness -= 0.05, 0);
+    happiness = happiness.toFixed(2);
     $('.happ').html(happiness);
     $('.res').prepend("You begin to wail. Daddy lifts you into his arms.</br>");
 }
 
 function eat(){
     hunger = Math.max(hunger -= 0.05, 0);
+    hunger = hunger.toFixed(2);
     $('.hunger').html(hunger);
     $('.res').prepend("You cry a bit and Mommy gives you your bottle.</br>");
 }
@@ -83,12 +87,16 @@ function randomThought(age){
 }
 function addTurn(){
     age += 0.05; //to be balanced
+    age = age.toFixed(2);
     $('.age').html(age);
     happiness -= 0.05;
+    happiness = happiness.toFixed(2);
     $('.happ').html(happiness);
     hunger += 0.05;
+    hunger = hunger.toFixed();
     $('.hunger').html(hunger);
     tiredness += 0.05;
+    tiredness = tiredness.toFixed(2);
     $('.tiredness').html(tiredness);
 }
 
