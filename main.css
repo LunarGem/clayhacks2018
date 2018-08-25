@@ -7,3 +7,7 @@
 td{
     width: 400px;
 }
+.res{
+    height: 400px;
+    overflow: hidden;
+}
