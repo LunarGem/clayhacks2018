@@ -83,3 +83,7 @@ function addContent(){
     $('.results').show();
     $('.baby').show();
 }
+
+function addLaugh(){
+	$('.laugh').show();
+}
